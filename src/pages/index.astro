@@ -1,0 +1,95 @@
+---
+const contacts = {
+  kieran: '+447540064148',
+  chris: '+447921614630',
+  vet: '+441617992299',
+  hospital: '+441617944999',
+  daycare: '+447379340280',
+};
+---
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f6efe6" />
+  <meta name="description" content="Everything you need to know while looking after Barbara Peacock-Marshall." />
+  <title>The Wonderful World of Barbara</title>
+  <style>
+    :root{--bg:#f7f1e8;--paper:#fffdf9;--ink:#29251f;--muted:#6e665d;--line:#e6dbcf;--accent:#765b46;--soft:#efe4d8;--red:#a93232;--redbg:#fff0ee;--green:#2f6b45;--greenbg:#edf7ef;--shadow:0 10px 30px rgba(62,45,29,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(760px,calc(100% - 28px));margin:auto}
+    header{padding:38px 0 18px;text-align:center}.eyebrow{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-size:.78rem}h1{font-family:Georgia,serif;font-size:clamp(2.25rem,9vw,4.4rem);line-height:.94;margin:.25rem 0 .7rem}.subtitle{color:var(--muted);font-size:1.06rem;margin:0 auto 18px;max-width:520px}
+    .profile{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;color:var(--muted);font-size:.9rem}.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 10px}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 8px}.btn{display:flex;align-items:center;justify-content:center;gap:7px;min-height:50px;padding:10px;border-radius:14px;text-decoration:none;font-weight:800;background:var(--ink);color:white;text-align:center}.btn.alt{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.btn.emergency{background:var(--red)}
+    nav{display:flex;gap:8px;overflow:auto;padding:10px 0 16px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{white-space:nowrap;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-weight:700;font-size:.88rem}
+    section{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;margin:14px 0;box-shadow:var(--shadow)}h2{font-family:Georgia,serif;font-size:1.65rem;margin:0 0 12px}h3{font-size:1.05rem;margin:20px 0 7px}p{margin:8px 0}.note{background:var(--soft);padding:14px;border-radius:14px;margin:12px 0}.danger{background:var(--redbg);border-left:5px solid var(--red);padding:14px;border-radius:12px;margin:12px 0}.good{background:var(--greenbg);border-left:5px solid var(--green);padding:14px;border-radius:12px;margin:12px 0}.two{display:grid;grid-template-columns:1fr;gap:10px}.mini{border:1px solid var(--line);border-radius:15px;padding:14px}.mini strong{display:block;margin-bottom:4px}
+    table{width:100%;border-collapse:collapse;font-size:.92rem}th{text-align:left;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}td,th{padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}.red{color:var(--red);font-weight:800}.amber{color:#8a5b00;font-weight:800}.green{color:var(--green);font-weight:800}footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.9rem}.quote{font-family:Georgia,serif;font-size:1.08rem}
+    @media(min-width:620px){.two{grid-template-columns:1fr 1fr}.quick{grid-template-columns:repeat(4,1fr)}section{padding:28px}}
+  </style>
+</head>
+<body><div class="wrap">
+<header>
+  <div class="eyebrow">🐾 Barbara Peacock-Marshall</div>
+  <h1>The Wonderful<br />World of Barbara</h1>
+  <p class="subtitle">Everything you need to know while looking after one small, affectionate and occasionally ridiculous Schnoodle.</p>
+  <div class="profile"><span class="pill">Schnoodle</span><span class="pill">Born 28 Aug 2022</span><span class="pill">6.5 kg</span><span class="pill">Healthy</span></div>
+  <div class="quick"><a class="btn" href={`tel:${contacts.kieran}`}>☎ Kieran</a><a class="btn" href={`tel:${contacts.chris}`}>☎ Chris</a><a class="btn alt" href={`tel:${contacts.vet}`}>🩺 Vet</a><a class="btn emergency" href={`tel:${contacts.hospital}`}>🚨 Hospital</a></div>
+</header>
+<nav aria-label="Page sections"><a href="#essentials">Essentials</a><a href="#walkies">Walkies</a><a href="#food">Food</a><a href="#language">Barbara → English</a><a href="#home">At home</a><a href="#barbara">Being Barbara</a><a href="#health">Emergency</a></nav>
+<main>
+<section id="essentials"><h2>☀️ The everyday stuff</h2><div class="two">
+<div class="mini"><strong>🍽️ Food</strong>Twice daily, roughly 7–8am and 4–5pm. Times are flexible.</div>
+<div class="mini"><strong>🚶 Exercise</strong>45–60 mins total: one long walk, usually with ball chasing, or two 25–30 min walks.</div>
+<div class="mini"><strong>🌙 Bedtime</strong>Usually around 10pm. Let her out first, say <b>“Bedtime Barbara”</b>, then close her crate.</div>
+<div class="mini"><strong>🚽 Morning</strong>We usually let her out around 6am. The overnight interval matters more than the exact time.</div></div>
+<h3>Food amounts</h3><p><b>Dry:</b> 1 cup per meal, using the cup with the food container.</p><p><b>Wet + dry:</b> ½ wet food + ½ cup dry food per meal.</p>
+<h3>Toilet</h3><p>Barbara is fully house-trained <b>at home</b> and goes outside. She'll usually ask with a single little <b>“grrup!”</b> bark. An accident at home is extremely unusual and is more likely to mean an upset stomach or illness.</p></section>
+
+<section id="walkies"><h2>🚶 Walkies</h2><div class="danger"><b>Road rule:</b> Barbara has no traffic sense. Always keep her on a lead anywhere she could get to a road. She will chase squirrels, so be particularly careful around park gates and exits.</div>
+<p>She's fine off-lead in a safe area away from roads. Call <b>“Here!”</b> for recall. If she's being a dick and ignoring you, say <b>“Bye Barbara!”</b> and walk away — she'll normally come after you.</p>
+<p>She <b>loves chasing a ball</b> and normally brings it straight back. Squirrels and birds can temporarily override normal Barbara programming.</p>
+<h3>How much?</h3><p>Her normal day is 45–60 minutes of exercise, but that's her routine rather than her physical limit. Take her somewhere like Snowdon and she'll happily run around it while you're trying to climb it. You are considerably more likely to tire before Barbara.</p>
+<h3>💧 Water</h3><p>She often gets thirsty after ball chasing. We have a <b>small steel water ball that can be clipped to her lead</b>, and she'll happily drink from it. Worth taking for longer or more energetic walks.</p><p>Left to her own devices, she prefers puddle water because she's a bit of a tramp. Discourage obviously stagnant or dirty water.</p>
+<h3>💩 The Barbara Roll™</h3><p>Barbara will roll in horrible things — dead worms, mice and whatever else she considers perfume.</p><p><b>Watch for the tell:</b> she'll suddenly dip down and to one side, leading with her head/shoulder. That's her setting herself up to roll.</p><p>If she's off-lead and you spot it in time, a firm <b>“NO!” may stop her</b>. If you're close enough, intervene before she gets the shoulder down.</p><p>Once she's committed to the manoeuvre, you may already have lost negotiations. 😂</p>
+<h3>🐕 Other dogs</h3><p>Barbara is generally good with other dogs. She can be a little jumpy/excitable, but doesn't like being overly fussed. If another dog is persistently bothering her she may tell them off. Give her space and move on rather than making her stay in an interaction she's had enough of.</p></section>
+
+<section id="food"><h2>🍽️ Food, treats & begging</h2><p>If you have food, Barbara wants it. We try not to feed her from our plates because it's not a habit we want to encourage.</p><p>She's usually extremely polite about begging: she'll put a <b>paw on your leg or lap</b> as her version of “please”. If she <b>barks at you for food</b>, that's a hard <b>“No”</b> and never reward the barking.</p>
+<h3>🥔 Crisp fiend</h3><p>If she's hovering hopefully, ask <b>“What do you say?”</b> and she'll usually paw you to say please. <b>If you ask her to say please and she does, follow through</b> with a small piece of whatever dog-safe treat you were offering. Don't ask if you don't intend to share.</p>
+<h3>🦴 Treats</h3><p>Barbara should <b>earn her treats</b>. Ask for something she knows — Sit, Lie Down, Stay, Basket, or “What do you say?” — then reward her.</p>
+<h3>Has Barbara eaten something?</h3><div style="overflow-x:auto"><table><thead><tr><th>Food</th><th>What to do</th></tr></thead><tbody>
+<tr><td><span class="red">🔴 Grapes, raisins, sultanas, currants</span></td><td>Call vet immediately</td></tr><tr><td><span class="red">🔴 Xylitol / E967</span><br />(sugar-free products, some peanut butter)</td><td>Call vet immediately</td></tr><tr><td><span class="red">🔴 Chocolate</span>, especially dark/cocoa</td><td>Call vet — tell them type, amount & Barbara's weight</td></tr><tr><td><span class="red">🔴 Alcohol / raw yeast dough</span></td><td>Call vet immediately</td></tr><tr><td><span class="red">🔴 Onion, garlic, leeks, chives</span></td><td>Call vet for advice — don't wait for symptoms</td></tr><tr><td><span class="red">🔴 Macadamia nuts / mouldy food</span></td><td>Call vet for advice</td></tr><tr><td><span class="amber">🟠 Cooked bones / corn cobs / fruit stones</span></td><td>Call vet if swallowed — obstruction/splinter risk</td></tr><tr><td><span class="amber">🟠 Fatty, salty or very rich food</span></td><td>Small amount: monitor. Large amount or unwell: call vet</td></tr><tr><td><span class="green">🟢 Normal peanut butter (NO xylitol)</span></td><td>Fine in small amounts</td></tr><tr><td><span class="green">🟢 Plain meat, egg, rice, bread, potato, most dog-safe fruit/veg</span></td><td>Fine in sensible amounts</td></tr>
+</tbody></table></div><div class="danger"><b>Regardless of food:</b> repeated vomiting, severe weakness, tremors/seizure, collapse, breathing difficulty or significant abdominal pain → emergency vet.<br /><br />If you're unsure what she ate or how much, call rather than waiting. <b>Don't make Barbara vomit unless a vet specifically tells you to.</b></div></section>
+
+<section id="language"><h2>🗣️ Barbara → English</h2><table><tbody>
+<tr><td><b>Sit</b></td><td>Sit down.</td></tr><tr><td><b>Lie down</b></td><td>Lie down.</td></tr><tr><td><b>Here</b></td><td>Come back / recall.</td></tr><tr><td><b>Wait</b></td><td>Stop and wait while walking.</td></tr><tr><td><b>Stay</b></td><td>Remain where she is when sitting.</td></tr><tr><td><b>Stay stay</b></td><td>Stay on the bed, couch, cushion or spot you've placed her.</td></tr><tr><td><b>No</b></td><td>Stop what you're doing.</td></tr><tr><td><b>Basket</b></td><td>Go to her day bed.</td></tr><tr><td><b>Bedtime Barbara</b></td><td>Go into her crate. Actual time irrelevant.</td></tr><tr><td><b>Up up</b> + tap</td><td>Invitation to jump onto the couch, chair or your lap.</td></tr><tr><td><b>Snap fingers + point</b></td><td>Emphatic direction: go/do what I'm indicating there.</td></tr><tr><td><b>What do you say?</b></td><td>Give a paw as “please”. If you've asked, reward her.</td></tr>
+</tbody></table><div class="note"><b>Context matters:</b> out walking, “Bye Barbara” + walking away usually gets her to follow if she's ignoring recall. At home, “Bye bye Barbara” is part of the familiar leaving routine and tells her she's staying behind.</div></section>
+
+<section id="home"><h2>🏠 At home</h2>
+<h3>👋 When you arrive</h3><p>Barbara can get very excited and jump up. We're training her not to, so <b>ignore her while she's jumping/excited</b>. Once she's calm, give her all the attention you want. It's not fun because it's adorable, but it's better for her and for people who don't know her.</p>
+<h3>🪟 Barking at the window</h3><p>If Barbara barks at something outside, go to her, say <b>“Thank you”</b> while giving her a <b>stroke on the head</b>, then say <b>“Basket”</b>. Acknowledge → settle → day bed.</p>
+<h3>🔔 Doorbell & visitors</h3><p>If the doorbell goes or someone is at the door, Barbara will bark. <b>A lot.</b> Once you've dealt with the door, use the same Thank you + head stroke → Basket routine. If the visitor comes in, ignore excited jumping until she settles.</p>
+<h3>🛋️ The Stare</h3><p>If you're on the couch or in a chair and Barbara sits or stands directly in front of you staring, she's probably waiting for <b>you to rearrange yourself into a suitable Barbara-seating position</b>. If you're taking too long, she may give you a little <b>“rup!”</b> as a hurry-up.</p><p>Apparently, you are the furniture and she's waiting for you to assemble yourself correctly.</p>
+<h3>🏠 Being left alone</h3><p>We normally keep it to <b>5 hours or less; 6 hours is the absolute maximum</b>. Either leave her downstairs with the lounge closed off, or put her in her crate and close the crate door — she's completely comfortable with both.</p><p>Say <b>“Bye bye Barbara”</b> as you leave. If she's loose downstairs she'll usually go to the window to watch you go.</p>
+<h3>🌙 Bedtime Barbara</h3><p>Barbara <b>likes her crate and prefers the door closed</b>. It's her sleeping space, not a punishment. Let her out for a final toilet trip, say “Bedtime Barbara”, and close the crate properly.</p><p>She has been known to come upstairs and bark outside our bedroom because her sleeping chamber was not properly secured, expecting to be escorted back downstairs so you can close it correctly this time. Barbara has standards.</p>
+<h3>🧹 Noises</h3><p>Thunder doesn't bother her. Fireworks are generally fine indoors unless exceptionally loud. She dislikes the vacuum and moves away rather than being frightened; she mostly ignores the robot cleaner unless it gets too close.</p></section>
+
+<section id="barbara"><h2>❤️ Being Barbara</h2><p>Barbara is <b>very cuddly and affectionate</b> and loves being close to people. She's grown up around two young boys and is comfortable around children; normal supervision still applies.</p><p>She has absolutely no respect for personal space. If your face is within range, <b>she may try to stick her tongue in your mouth</b>. Consider yourself warned.</p>
+<h3>🎉 Play mode</h3><p>If she faces you with her front end down and bum up — the classic <b>play bow / downward-dog pose</b> — she's asking to play.</p><p>When excited, especially outside, she may get the zoomies: running around you madly while making <b>low rolling growly noises and barking</b>. That's Barbara having fun, not aggression.</p><p>If you initiate rough play she may gently mouth your hand. If she gets too chewy, say <b>“Ow!”</b>. She'll stop and will usually give you a lick instead.</p>
+<h3>🥹 Very Barbara things</h3><p>At four, she still makes the little <b>puppy yowl when she yawns</b>. Completely normal. Still apparently a puppy.</p>
+<h3>✂️ Grooming</h3><p>She's extremely low-shedding and basically maintenance-free between regular professional grooms. No brushing routine is needed while you're looking after her.</p><p>She's fine being bathed. Her paws can be handled/cleaned too — she tolerates it, although she doesn't particularly enjoy it.</p>
+<h3>🚗 Car & travelling</h3><p>Barbara is very comfortable in the car and is used to journeys of around four hours. She has her own <b>car seat and should be clipped into it</b> while travelling.</p><p>One caveat: she somehow knows when you've reached your destination and may suddenly become <b>extremely vocal and sound as though the world is ending</b>. God knows why. It's normal Barbara arrival behaviour.</p></section>
+
+<section id="health"><h2>🚨 Health & emergencies</h2><div class="danger"><b>Barbara is well insured.</b><br />If treatment is necessary to save her life or prevent serious harm, <b>the answer is YES regardless of cost</b>.<br /><br />Call Kieran or Chris if you can, but <b>do not delay urgent treatment</b> because you can't reach us or because of the cost.</div>
+<h3>☎️ Us</h3><div class="two"><a class="btn" href={`tel:${contacts.kieran}`}>Call Kieran<br />07540 064148</a><a class="btn" href={`tel:${contacts.chris}`}>Call Chris<br />07921 614630</a></div>
+<h3>🩺 Normal vet — PetMedics Walkden</h3><p>Memorial Road, Walkden, Worsley, Manchester M28 3DS</p><div class="two"><a class="btn alt" href={`tel:${contacts.vet}`}>Call 0161 799 2299</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=PetMedics+Walkden+Memorial+Road+M28+3DS">Directions</a></div>
+<h3>🚨 Emergency / out-of-hours — PetMedics Worsley Hospital</h3><p>Unit A1, Priestley Road, Worsley, M28 2LY</p><div class="two"><a class="btn emergency" href={`tel:${contacts.hospital}`}>Call 0161 794 4999</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=PetMedics+Worsley+Hospital+Priestley+Road+M28+2LY">Directions</a></div>
+<h3>📍 AirTag</h3><p>Barbara's collar has an AirTag. <b>We will share its location with you</b> while you're looking after her. If she goes missing, call us immediately and use the shared AirTag location to track her.</p>
+<div class="good"><b>🤔 Not sure? Call us.</b><br />You don't need to diagnose Barbara. If she's behaving unusually, seems unwell, has eaten something questionable, or you're simply unsure, call Kieran or Chris. For an obvious emergency, go straight to the vet.</div></section>
+
+<section id="daycare"><h2>🐾 If something comes up</h2><p>Barbara is registered with <b>Doggy Daycare Trafford Park</b>. If something unexpected comes up and you can't look after her for part of the day, <b>call Kieran or Chris</b>. Daycare may be an option during weekday opening hours.</p>
+<div class="two"><div class="mini"><strong>Opening hours</strong>Monday–Friday: 6:45am–7:00pm<br />Saturday–Sunday: Closed</div><div class="mini"><strong>Address</strong>The Bridgewater Centre, Unit 6 Robson Avenue, Trafford Park/Stretford, Manchester M41 7TE</div></div>
+<div class="two" style="margin-top:10px"><a class="btn alt" href={`tel:${contacts.daycare}`}>Call 07379 340280</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Doggy+Daycare+Trafford+Park+M41+7TE">Directions</a></div></section>
+
+<section><h2>🎒 Barbara's stuff</h2><p>Anything you'll need for Barbara will either be <b>handed over to you</b> or <b>left on the dining table</b>.</p></section>
+</main>
+<footer><div class="quote">The Wonderful World of Barbara 🐾</div><div>Made for the people trusted with our favourite little menace.</div></footer>
+</div></body></html>
